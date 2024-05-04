@@ -53,6 +53,9 @@ print(response.json())
 3. Set up AWS S3 bucket with the trained model file.
 4. Configure NGINX to forward requests to the Flask app.
 5. Set up Elastic APM and configure the Flask application with the Elastic APM agent.
+6. Obtain an SSL/TLS certificate using Python Certbot for securing communications.
+7. Assign a domain name to your AWS EC2 instance.
+8. Implement CORS to allow requests only from the Floravision frontend.
 
 ### Configuration
 
@@ -62,10 +65,15 @@ print(response.json())
 
 #### NGINX Configuration
 - Configure NGINX to forward requests to the Flask app running on a port.
+- Set up SSL/TLS certificate obtained from Python Certbot for secure communicatio
 
 #### Elastic APM Configuration
 - Set up an Elastic APM instance and obtain the service name, secret token, and server URL.
 - Update the `app.config['ELASTIC_APM']` dictionary with the obtained credentials.
+
+#### CORS Configuration
+- Implement CORS to only allow requests from the Floravision frontend. Update the CORS configuration in the Flask app accordingly.
+
 
 ### Dependencies
 
