@@ -66,7 +66,7 @@ print(response.json())
 - Flask
 - Flask-CORS
 - ElasticAPM
-- TensorFlow
+- TensorFlow 2.11
 - Boto3
 
 
