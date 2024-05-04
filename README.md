@@ -39,28 +39,35 @@ response = requests.post(url, files=files)
 # Print prediction result
 print(response.json())
 
-# Installation and Setup
--Clone the repository or download the source code.
--Install required Python packages using pip install -r requirements.txt.
--Set up AWS S3 bucket with the trained model file.
--Configure NGINX to forward requests to the Flask app.
--Set up Elastic APM and configure the Flask application with the Elastic APM agent Configuration
--AWS S3 Configuration
--Ensure that the AWS credentials with access to the S3 bucket are properly configured.
--Update the download_model_from_s3 function with the appropriate S3 bucket name and model file name.
--NGINX Configuration
--Configure NGINX to forward requests to the Flask app running on a port.
--Elastic APM Configuration
--Set up an Elastic APM instance and obtain the service name, secret token, and server URL.
--Update the app.config['ELASTIC_APM'] dictionary with the obtained credentials.
--Dependencies
--Flask
--Flask-CORS
--ElasticAPM
--TensorFlow
-Boto3
-Authors
-Author: Eren Tarak
+```markdown
+## Installation and Setup
 
+1. Clone the repository or download the source code.
+2. Install required Python packages using `pip install -r requirements.txt`.
+3. Set up AWS S3 bucket with the trained model file.
+4. Configure NGINX to forward requests to the Flask app.
+5. Set up Elastic APM and configure the Flask application with the Elastic APM agent.
+
+### Configuration
+
+#### AWS S3 Configuration
+- Ensure that the AWS credentials with access to the S3 bucket are properly configured.
+- Update the `download_model_from_s3` function with the appropriate S3 bucket name and model file name.
+
+#### NGINX Configuration
+- Configure NGINX to forward requests to the Flask app running on a port.
+
+#### Elastic APM Configuration
+- Set up an Elastic APM instance and obtain the service name, secret token, and server URL.
+- Update the `app.config['ELASTIC_APM']` dictionary with the obtained credentials.
+
+### Dependencies
+
+- Flask
+- Flask-CORS
+- ElasticAPM
+- TensorFlow
+- Boto3
+```
 
 
