@@ -39,7 +39,7 @@ response = requests.post(url, files=files)
 # Print prediction result
 print(response.json())
 
-```markdown
+
 ## Installation and Setup
 
 1. Clone the repository or download the source code.
@@ -68,6 +68,6 @@ print(response.json())
 - ElasticAPM
 - TensorFlow
 - Boto3
-```
+
 
 
