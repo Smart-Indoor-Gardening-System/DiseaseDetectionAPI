@@ -1,5 +1,11 @@
 # DiseaseDetectionAPI
 A python flask rest api that use a trained tensorflow keras model  from AWS S3 for predicting disease , deployed on AWS EC2 Ubuntu instance with NGINX . Application Performance Monitoring done by Elastic APM  through elastic apm agent configured on the flask app.
+
+Take a look at the right side of the block diagram 
+
+![WhatsApp Image 2024-05-01 at 23 31 37 (1)](https://github.com/Smart-Indoor-Gardening-System/DiseaseDetectionAPI/assets/68688967/dd44a1db-7084-40c2-8b2b-f46cfcc687cc)
+
+
 # AI Disease Detector API Documentation
 
 ## Endpoints
